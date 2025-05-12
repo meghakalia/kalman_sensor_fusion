@@ -1,4 +1,6 @@
-# IMU-Based Orientation Estimation 📐
+# Kalman Filter for Sensor Fusion
+
+## IMU-Based Orientation Estimation 📐
 
 This repository contains Python scripts to estimate the **3D orientation (Yaw, Pitch, Roll)** of a device using **gyroscope and accelerometer data**, and compares the performance of different estimation methods.
 
