@@ -34,8 +34,8 @@ class QuaternionKalmanFilter:
     def __init__(self):
         self.x = np.array([1, 0, 0, 0])
         self.P = np.eye(4)
-        self.Q = 0.0001 * np.eye(4)
-        self.R = 10 * np.eye(4)
+        self.Q = 0.0001 * np.eye(4) # process noise
+        self.R = 10 * np.eye(4) # sensor noise
         self.H = np.eye(4)
 
     def predict(self, omega, dt):
@@ -107,6 +107,7 @@ def run_kalman_with_plot(accel_csv="ArsAccel.csv", gyro_csv="ArsGyro.csv", dt=0.
     plt.title('Roll Angle'); plt.legend(); plt.grid(True)
 
     plt.tight_layout()
+    plt.savefig("kalman_gyro_acceleration_plot.png")
     plt.show()
 
 if __name__ == "__main__":
