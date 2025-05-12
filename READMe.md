@@ -2,7 +2,7 @@
 
 This repository contains Python scripts to estimate the **3D orientation (Yaw, Pitch, Roll)** of a device using **gyroscope and accelerometer data**, and compares the performance of different estimation methods.
 
-The filtering pipelines implemented here are derived from an original MATLAB implementation and include:
+The pipelines are as follows:
 - **Euler Angle Integration** (gyroscope only)
 - **Quaternion Kalman Filter (gyro only)**
 - **Quaternion Kalman Filter (gyro + accelerometer)**
